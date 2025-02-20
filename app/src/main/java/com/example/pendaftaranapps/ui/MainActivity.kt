@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.fabAdd.setOnClickListener {
             startActivity(Intent(this, AddUpdateActivity::class.java))
+            finish()
         }
 
         findAllSiswa()

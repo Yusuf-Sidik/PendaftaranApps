@@ -102,6 +102,7 @@ class AddUpdateActivity : AppCompatActivity() {
                     if (responseBody != null){
                         Toast.makeText(this@AddUpdateActivity, "Success", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@AddUpdateActivity, MainActivity::class.java))
+                        finish()
                     }else{
                         Toast.makeText(this@AddUpdateActivity, "null", Toast.LENGTH_SHORT).show()
                     }
