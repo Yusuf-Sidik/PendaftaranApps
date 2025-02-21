@@ -1,6 +1,7 @@
 package com.example.pendaftaranapps.data.retrofit
 
 import com.example.pendaftaranapps.data.response.AddUpdateResponse
+import com.example.pendaftaranapps.data.response.DeleteResponse
 import com.example.pendaftaranapps.data.response.ListSiswaResponse
 import retrofit2.Call
 import retrofit2.http.Field
@@ -39,5 +40,5 @@ interface ApiService {
     @POST("api-delete-siswa.php")
     fun deleteSiswa(
         @Query("id") id: Int
-    ): Call<AddUpdateResponse>
+    ): Call<DeleteResponse>
 }
